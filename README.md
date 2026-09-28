@@ -88,9 +88,10 @@ npm run build
 ---
 
 
-## ✦ Author
+## ✦ Author & Connect
 
 **Rajan Gaur**
 - GitHub: [@RajanGaur01](https://github.com/RajanGaur01)
-- LinkedIn: [linkedin.com/in/rajan-gaur](https://linkedin.com/in/rajan-gaur)
-- Email: rajangaur.dev@gmail.com
+- LinkedIn: [linkedin.com/in/rajan-gaur](https://www.linkedin.com/in/rajan-gaur)
+- Direct Inquiries: Interactive live on-screen messaging channel on the portfolio
+

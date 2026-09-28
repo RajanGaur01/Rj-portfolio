@@ -7,13 +7,12 @@ export const portfolioData = {
     status: "Open to Collaborations & Internships",
     location: "India • Global Remote",
     tagline: "Action over theory. Building real-world software products, full-stack architectures, Flutter mobile apps, and cloud-integrated AI workflows.",
-    email: "rajangaur.dev@gmail.com",
     bio: "I am a Bachelor of Computer Applications (BCA) student passionate about building software products that solve real-world problems. I prefer building actual applications, experimenting with ideas, solving practical challenges, and turning concepts into usable products rather than learning isolated technologies.",
     socials: [
       { name: "GitHub", url: "https://github.com/RajanGaur01", handle: "github.com/RajanGaur01" },
-      { name: "LinkedIn", url: "https://linkedin.com", handle: "linkedin.com/in/rajan-gaur" },
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/rajan-gaur", handle: "linkedin.com/in/rajan-gaur" },
       { name: "Twitter / X", url: "https://x.com", handle: "@rajan_gaur" },
-      { name: "Email", url: "mailto:rajangaur.dev@gmail.com", handle: "rajangaur.dev@gmail.com" }
+      { name: "Live Chat", url: "#contact", handle: "Direct On-Screen Chat" }
     ]
   },
 
