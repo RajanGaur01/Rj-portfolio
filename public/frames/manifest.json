@@ -1,0 +1,7 @@
+{
+  "frameCount": 180,
+  "format": "frame_{index:04d}.webp",
+  "originalWidth": 1280,
+  "originalHeight": 720,
+  "duration": 10.0
+}

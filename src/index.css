@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-dark: #050505;
+  }
+
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom Luxury Smoked Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* ========================================================================= */
+/* STORMY SKY FLUID 3D CUSTOM CURSORS                                        */
+/* ========================================================================= */
+
+html,
+body,
+body * {
+  cursor: url('/cursors/stormy-arrow-32.png') 0 0, auto;
+}
+
+/* Interactive elements use the stormy hand pointer */
+a,
+a *,
+button,
+button *,
+[role="button"],
+[role="button"] *,
+.cursor-pointer,
+.cursor-pointer *,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+select,
+summary {
+  cursor: url('/cursors/stormy-hand-32.png') 7 0, pointer !important;
+}
+
+/* Text editing inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  cursor: text !important;
+}
+
+/* Disabled elements */
+:disabled,
+[disabled],
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+/* ========================================================================= */
+/* 3D PERSPECTIVE, LEVITATION & SPECULAR EDGE FLASH                          */
+/* ========================================================================= */
+
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.perspective-1400 {
+  perspective: 1400px;
+}
+
+.perspective-1600 {
+  perspective: 1600px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@keyframes edge-specular-flash {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), inset 0 0 0 0 rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+  35% {
+    box-shadow: 0 0 55px 12px rgba(255, 255, 255, 0.95), inset 0 0 35px 8px rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+.card-edge-flash {
+  animation: edge-specular-flash 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ========================================================================= */
+/* PURE BLACK, WHITE & SILVER METALLIC TYPOGRAPHY PALETTE                    */
+/* ========================================================================= */
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 30%, #94A3B8 75%, #64748B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-white-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 50%, #CBD5E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-blue-gradient {
+  background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 50%, #1D4ED8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-metallic {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 60%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge-mono {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #F8FAFC;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.badge-blue {
+  background: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  color: #93C5FD;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.glow-dot-white {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px #FFFFFF, 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.glow-dot-blue {
+  background-color: #3B82F6;
+  box-shadow: 0 0 10px #3B82F6, 0 0 22px rgba(59, 130, 246, 0.9);
+}
+
+.btn-blue-primary {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.5), 0 0 15px rgba(59, 130, 246, 0.3);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-blue-primary:hover {
+  background-color: #1D4ED8;
+  box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.7), 0 0 25px rgba(59, 130, 246, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-blue-primary:active {
+  transform: scale(0.97);
+}
+
+/* Smoked Obsidian Liquid Glass Utilities */
+.liquid-glass {
+  background: rgba(14, 14, 18, 0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.85),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+              inset 0 -1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.liquid-glass-pill {
+  background: rgba(10, 10, 14, 0.8);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.9),
+              0 0 25px rgba(255, 255, 255, 0.05),
+              inset 0 1px 2px rgba(255, 255, 255, 0.3),
+              inset 0 -1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.liquid-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%),
+              rgba(10, 10, 14, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75),
+              inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.95),
+              0 0 30px rgba(255, 255, 255, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Smoked Obsidian Liquid Glass Mobile Menu */
+.liquid-glass-menu {
+  background: linear-gradient(165deg, rgba(16, 20, 36, 0.88) 0%, rgba(8, 10, 18, 0.96) 100%);
+  backdrop-filter: blur(32px) saturate(210%);
+  -webkit-backdrop-filter: blur(32px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 30px 70px -10px rgba(0, 0, 0, 0.95),
+              0 0 40px rgba(37, 99, 235, 0.18),
+              inset 0 1px 2px 0 rgba(255, 255, 255, 0.35),
+              inset 0 -1px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+.liquid-glass-menu-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
+              0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.liquid-glass-menu-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.15), transparent);
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.6s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.liquid-glass-menu-item:hover::before {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+.liquid-glass-menu-item:hover {
+  background: rgba(37, 99, 235, 0.18);
+  border-color: rgba(59, 130, 246, 0.55);
+  box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.25),
+              0 8px 24px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+.liquid-glass-menu-item:active {
+  transform: scale(0.97) translateY(0);
+  background: rgba(37, 99, 235, 0.3);
+  border-color: rgba(59, 130, 246, 0.7);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
+              0 2px 8px rgba(37, 99, 235, 0.4);
+}
+
+/* Vignette and Radial Gradients */
+.hero-vignette {
+  background: radial-gradient(circle at center, transparent 35%, rgba(5, 5, 5, 0.75) 80%, #050505 100%);
+}
+
+/* Infinite Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Monoline Tubular Script (Yellowtail / Bayshore Reference Match) */
+.hero-tubular-script {
+  font-family: 'Yellowtail', cursive;
+  color: #60a5fa;
+  -webkit-text-stroke: 0.45px rgba(219, 234, 254, 0.4);
+  text-shadow: 
+    0 0 2px #dbeafe,
+    0 0 8px #3b82f6,
+    0 0 22px rgba(37, 99, 235, 0.8),
+    0 4px 14px rgba(0, 0, 0, 0.95);
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+/* Hero Majestic Architectural Bold Title */
+.hero-bold-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+  text-shadow: 
+    0 4px 24px rgba(0, 0, 0, 0.95),
+    0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Dark Obsidian High-Contrast Subtitle (Black / Dark Obsidian with luminous rim) */
+.hero-obsidian-sub {
+  color: #000000;
+  font-weight: 800;
+  text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.95),
+    0 0 6px rgba(255, 255, 255, 0.75),
+    0 1px 3px rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.04em;
+}
+
+/* Custom Modal Smooth Touch Scrollbar */
+.custom-modal-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
+.custom-modal-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-modal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 10px 0;
+}
+
+.custom-modal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 9999px;
+}
+
+.custom-modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
