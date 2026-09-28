@@ -440,7 +440,7 @@ export default function HeroScrollCanvas() {
                   </div>
 
                   <p className="hero-obsidian-sub text-xs sm:text-sm font-mono uppercase mt-4 max-w-xs leading-relaxed">
-                    ResQ Meal, EV - Exam Vault, Employee Tracker & AWS Infrastructure.
+                    ResQ Meal, EV - Exam Vault, SarthX & AWS Infrastructure.
                   </p>
                 </div>
               </>

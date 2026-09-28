@@ -76,8 +76,8 @@ export const portfolioData = {
         step: "Selected Innovations",
         left: {
           tag: "FLAGSHIP INVENTIONS",
-          heading: "RESQ MEAL, EV PLATFORM & TRACKER",
-          description: "Engineered ResQ Meal for food waste redistribution, EV Platform with AI approval pipelines, and a complete Flutter Employee Tracking system."
+          heading: "RESQ MEAL, EXAM VAULT & SARTHX",
+          description: "Engineered ResQ Meal for food waste redistribution, Exam Vault with AI evaluation pipelines, and SarthX for geofenced field operations."
         },
         right: {
           tag: "GROWTH TRAJECTORY",
@@ -125,8 +125,8 @@ export const portfolioData = {
       impact: "Eliminates local food waste with structured logistics and transparent NGO tracking.",
       tech: ["React.js", "Firebase", "Firestore", "Tailwind CSS", "Cloudinary", "Vite"],
       image: "/projects/resq-meal.jpg",
-      liveUrl: "https://github.com/rajangaur/resq-meal",
-      githubUrl: "https://github.com/rajangaur/resq-meal",
+      liveUrl: "https://resqmeal.pages.dev",
+      githubUrl: "https://github.com/RajanGaur01/Rj-portfolio",
       featured: true
     },
     {
@@ -150,20 +150,20 @@ export const portfolioData = {
       impact: "Accelerates study preparation with instant AI evaluation and comprehensive question archives.",
       tech: ["React.js", "Gemini API", "Firebase", "Tailwind CSS", "Cloudinary", "JavaScript"],
       image: "/projects/ev-platform.jpg",
-      liveUrl: "https://github.com/rajangaur/ev-platform",
-      githubUrl: "https://github.com/rajangaur/ev-platform",
+      liveUrl: "https://examvault.me",
+      githubUrl: "https://github.com/RajanGaur01/EV-Exam-Vault",
       featured: true
     },
     {
-      id: "employee-tracker",
-      badge: "PRODUCTION MOBILE APP",
-      title: "EMPLOYEE TRACKER",
-      subtitle: "GPS Geofenced Attendance & Automated Payroll",
-      tagline: "GPS Geofenced Attendance & Automated Payroll",
-      category: "Flutter Android Mobile App",
+      id: "sarthx",
+      badge: "FLAGSHIP PLATFORM & APP",
+      title: "SARTHX",
+      subtitle: "GPS Geofenced Attendance & Emergency Dispatch",
+      tagline: "Location-Verified Field Operations & Emergency Alerts",
+      category: "Full Stack & Flutter Platform",
       year: "2024",
       architecture: "Flutter (Dart) • Geolocator API • SQLite / Local State • Custom Algorithms",
-      description: "A mobile application designed for distributed and field teams to track geofenced work hours, automate shift check-ins, and calculate dynamic payroll with leave deductions.",
+      description: "A comprehensive operations and workforce management platform designed for distributed field teams, featuring real-time geofenced check-ins, automated payroll computation, and emergency dispatch alerts.",
       problem: "Manual attendance systems and generic punch clocks lead to time-theft, inaccurate overtime logging, and hours of manual payroll calculation errors.",
       solution: "Developed an Android Flutter application that calculates exact working durations through location-verified checkouts and dynamic salary calculation formulas.",
       features: [
@@ -174,9 +174,10 @@ export const portfolioData = {
       ],
       impact: "Streamlines attendance verification and delivers automated, dispute-free salary computation.",
       tech: ["Flutter", "Dart", "Android SDK", "Geolocator", "Local DB", "State Management"],
-      image: "/projects/employee-tracker.jpg",
-      liveUrl: "https://github.com/rajangaur/employee-tracker",
-      githubUrl: "https://github.com/rajangaur/employee-tracker",
+      image: "/projects/sarthx.jpg",
+      cardImage: "/project-cards/sarthx.jpg",
+      liveUrl: "https://sarthx.vercel.app",
+      githubUrl: "https://github.com/RajanGaur01/SarthX",
       featured: true
     }
   ],

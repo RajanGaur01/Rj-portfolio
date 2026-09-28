@@ -23,12 +23,13 @@ A bespoke, ultra-luxury developer portfolio crafted with modern web technologies
 
 ## ✦ Key Projects Featured
 
-1. **RESQ MEAL** — Surplus Food Redistribution Network & Dual Dashboard (React, Firebase, Firestore, Cloudinary)
-2. **EV - EXAM VAULT** — AI-Powered Practice Exam & Knowledge Assessment Vault (React, Google Gemini API, Firestore)
-3. **SARTHX** — Android Location Tracking & Emergency Alert System (Flutter, Bloc, Android Services, Geofencing)
+1. **RESQ MEAL** — Surplus Food Redistribution Network & Dual Dashboard (React, Firebase, Firestore, Cloudinary) • **[Live Website](https://resqmeal.pages.dev)**
+2. **EV - EXAM VAULT** — AI-Powered Practice Exam & Knowledge Assessment Vault (React, Google Gemini API, Firestore) • **[Live Website](https://examvault.me)**
+3. **SARTHX** — Android & Web Operations, Attendance & Emergency Alerts (Flutter, Bloc, Android Services, Geofencing) • **[Live Website](https://sarthx.vercel.app)**
 4. **DEV CONNECT** — Microservices Developer Collaboration Hub (Node.js, Express, PostgreSQL, Docker)
 5. **AI WORKFLOW STUDIO** — Enterprise LLM Automation Engine (Python, FastAPI, Gemini API, Pinecone)
 6. **FLUTTER MOBILE UX** — 60 FPS Mobile Design Architecture (Flutter, Dart, Bloc, Hive)
+
 
 ---
 
